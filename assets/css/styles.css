@@ -150,8 +150,11 @@ header nav li:last-child{
 	}
 }
 
-
-
+@media (max-width: 500px){
+	header nav{
+		display: none;
+	}
+}
 /*----------------
  	Hero Section
 ----------------*/
@@ -220,7 +223,12 @@ header nav li:last-child{
 
 }
 
-
+@media (max-width: 500px){
+	.hero h1 {
+		font-size: 32px;
+    	padding-top: 60px;
+    }
+}
 
 /*--------------------
  	Our Work Section
@@ -371,25 +379,26 @@ header nav li:last-child{
 }
 
 .contact form{
+	flex-direction: column;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 
 	max-width: 800px;
 	width: 80%;
 }
 
 .contact form input{
-	padding: 15px;
+	padding: 20px;
 	flex: 1;
-	margin-right: 30px;
+	margin-bottom: 30px;
 	font-size: 18px;
 	color: #555;
 }
 
 .contact form .btn{
-	padding: 5px 20px;
+	padding: 20px 20px;
 }
 
 
